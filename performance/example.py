@@ -1,6 +1,6 @@
 import time
 
-from log_performance import log_performance
+from performance.log_performance import log_performance
 
 
 @log_performance
