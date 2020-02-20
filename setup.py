@@ -4,9 +4,7 @@ from setuptools import setup
 with open('README.md') as readme_file:
     readme = readme_file.read()
 
-requirements = [
-    # TODO: put package requirements here
-]
+requirements = ['numpy', 'pandas', 'plotly']
 
 setup(
     name='performance',
@@ -17,11 +15,11 @@ setup(
     author_email='aazami@gmail.com',
     url='https://github.com/ashaazami/performance',
     packages=find_packages(),
-    package_dir={'perf_loger': 'perf_loger'},
+    package_dir={'performance': 'performance'},
     include_package_data=True,
     install_requires=requirements,
     zip_safe=False,
-    keywords=['perf'],
+    keywords=['performance', 'log', 'call pattern', 'analyzer'],
     classifiers=[
         'Natural Language :: English',
         'Programming Language :: Python :: 3.7',
