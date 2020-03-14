@@ -1,6 +1,7 @@
 import time
 
 from performance.log_performance import log_performance, get_log_filename
+from performance.log_visualizer import visualize_performance
 
 
 @log_performance
@@ -11,6 +12,6 @@ def sleep_2_seconds():
 
 if __name__ == '__main__':
     sleep_2_seconds()
-    time.sleep(1)
     sleep_2_seconds()
-    print(get_log_filename())
+    file = get_log_filename()
+    visualize_performance(file)
